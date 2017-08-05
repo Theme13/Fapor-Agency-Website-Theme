@@ -1,0 +1,42 @@
+/* ---- isotope ---- */
+.isotope {
+  &-filter {
+    margin: 0 0 60px;
+    padding: 0;
+    list-style: none;
+    &__list {
+      display: inline-block;
+      padding: 10px;
+      text-transform: uppercase;
+      cursor: pointer;
+      &.is-checked {
+        color: map-get($colors, gold);
+      }
+    }
+  }
+  &-grid {
+    width: 100%;
+    &:after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+    &__item {
+      position: relative;
+      float: left;
+      width: 25%;
+      background: #888;
+      color: #262524;
+      & > * {
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+  &-image {
+    width: 100%;
+    height: 357px;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+}

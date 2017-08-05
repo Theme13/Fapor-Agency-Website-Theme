@@ -1,0 +1,26 @@
+.hero {
+	$this: &;
+	position: relative;
+	height: 550px;
+	background-color: $hero-background;
+	&#{$this}--small {
+		height: 250px;
+		#{$this}__content {
+			padding-top: 20px;
+			color: map-get($colors, white);
+		}
+		#{$this}__title {
+		    margin-bottom: 15px;
+			font-family: $raleway-font-family;
+			font-size: 40px;
+			line-height: 1.38;
+			letter-spacing: 1px;
+		}
+		#{$this}__text {
+		    margin: 0;
+			font-size: 14px;
+			line-height: 1.71;
+			letter-spacing: 0.4px;
+		}
+	}
+}

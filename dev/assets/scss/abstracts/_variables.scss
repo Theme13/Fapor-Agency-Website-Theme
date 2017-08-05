@@ -1,0 +1,52 @@
+/* FONT */
+$base-font-family: 'Open Sans', sans-serif;
+$base-font-size: 14px;
+$base-font-weight: 400;
+
+$heading-font-family: 'Open Sans', sans-serif;
+$heading-font-weight: 600;
+
+$raleway-font-family: 'Raleway', sans-serif;
+$raleway-font-weight: 600;
+
+/* BASE COLOR */
+$colors: (
+  white: #ffffff,
+  black: #000000,
+  light-black: #2b2f35,
+  dark-black: #24282f,
+  dark-blue: #24282f,
+  gold: #b5a263,
+  grey: #f7f7f7
+);
+
+/* TYPOGRAPHY */
+$heading-border: map-get($colors, gold);
+
+/* BODY */
+$body-background: map-get($colors, grey);
+$body-color: map-get($colors, dark-black);
+
+/* ICON */
+$icon-border: map-get($colors, gold);
+
+/* HEADER */
+$header-background: map-get($colors, dark-blue);
+
+/* MENU */
+$menu-color: map-get($colors, white);
+$menu-hover: map-get($colors, gold);
+$menu-hover-border: map-get($colors, gold);
+
+/* HERO */
+$hero-background: map-get($colors, light-black);
+
+/* SECTION */
+$section-background--white: map-get($colors, white);
+
+/* CARD */
+$card-background: map-get($colors, white);
+
+/* FOOTER */
+$footer-background: map-get($colors, light-black);
+$copyright-background: map-get($colors, dark-black);

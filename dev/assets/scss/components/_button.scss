@@ -1,0 +1,26 @@
+.button {
+	$this: &;
+	display: inline-block;
+    padding: 10px 25px 10px;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.8px;
+    border: none;
+    cursor: pointer;
+	text-decoration: none;
+	
+    &--rounded {
+    	@include border-radius(50px);
+    }
+
+    &--ghost-gold {
+		background: transparent;
+		border: 1px solid map-get($colors, gold);
+		color: map-get($colors, gold);
+		&:hover,
+		&:active {
+			background: map-get($colors, gold);
+			color: map-get($colors, white);
+		}
+    }
+}

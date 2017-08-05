@@ -1,0 +1,25 @@
+.menu {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	&__list {
+		display: inline-block;
+	    padding: 27px 20px;
+	}
+	&__link {
+		position: relative;
+		display: block;
+		color: $menu-color;
+		text-decoration: none;
+		&.active::before,
+		&:hover::before {
+		    content: '';
+		    position: absolute;
+		    display: block;
+		    bottom: -27px;
+		    width: 100%;
+		    height: 4px;
+		    background: $menu-hover-border;
+		}
+	}
+}

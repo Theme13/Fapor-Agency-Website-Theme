@@ -1,0 +1,45 @@
+.h1, .h2, .h3, .h4, .h5, .h6 { font-family: $heading-font-family; font-weight: $heading-font-weight; }
+.h1, .h2 { line-height: 1.1; }
+.h3, .h4 { line-height: 1.3; }
+.h1 { font-size: 400%; letter-spacing: -2px; margin: 1em 0 0.5em; }
+.h2 { font-size: 250%; letter-spacing: -1px; margin: 1em 0 0.5em; }
+.h3 { font-size: 200%; margin: 1em 0 0.5em; }
+.h4 { font-size: 180%; margin: 1em 0 0.5em; }
+.h5 { font-size: 130%; margin: 1em 0 0.5em; }
+
+.heading {
+	font-family: $raleway-font-family;
+	font-size: 24px;
+	font-weight: $raleway-font-weight;
+	&::after,
+	&--border::after {
+		content: '';
+	    display: block;
+	    width: 60px;
+	    margin: 0 auto;
+	    padding-top: 10px;
+	    border-bottom: 2px solid $heading-border;
+	}
+	&.left::after {
+		margin: 0 0;	
+	}
+}
+
+.f-24 { font-size: 24px; }
+.f-14 { font-size: 14px; }
+
+.italic { font-style: italic; }
+.bold   { font-weight: 700; }
+
+.block-margins { margin: 1em 0; }
+
+.unordered-list { list-style-type: disc; }
+.ordered-list { list-style: decimal; }
+
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+.color-white { color: map-get($colors, white); }
+.color-gold { color: map-get($colors, gold); }
+.color-grey { color: #6e7279; }

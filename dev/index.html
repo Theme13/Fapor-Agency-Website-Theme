@@ -1,0 +1,395 @@
+{% extends "_layout/base.html" %}
+{% set active_page = 'home' %}
+{% block content %}
+	<!-- Hero -->
+	<section class="hero">
+		<!-- <div class="owl-carousel owl-theme js-slider-hero">
+		    <div class="item"><h4 style="color: white">1</h4></div>
+		    <div class="item"><h4 style="color: white">2</h4></div>
+		    <div class="item"><h4 style="color: white">3</h4></div>
+		    <div class="item"><h4 style="color: white">4</h4></div>
+		</div> -->
+	</section>
+	
+	<!-- Service -->
+	<section class="section section--white">
+		<div class="row align-center">
+			<div class="small-12 medium-8 columns">
+				<div class="text-center m-b-l">
+					<h2 class="heading">We will help manage your Business</h2>
+					<p>We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. Whether you need to create a brand from scratch, including marketing materials and a beautiful.</p>
+				</div>
+			</div>
+			<div class="medium-10 columns">	
+				<div class="row small-up-1 medium-up-3">
+					<div class="columns text-center">
+						<div class="circle-icon circle-icon--large circle-icon--center">
+							<img src="assets/images/icon-1.png">
+						</div>
+
+						<h3>RETINA READY</h3>
+						<p>Whether you need to create a brand from scratch, including marketing materials and a beautiful and functional.</p>
+					</div>
+					<div class="columns text-center">
+						<div class="circle-icon circle-icon--large circle-icon--center">
+							<img src="assets/images/icon-2.png">
+						</div>
+
+						<h3>USER FRIENDLY</h3>
+						<p> Website or whether you are looking for a design refresh we are confident you will be pleased with the results.</p>
+					</div>
+					<div class="columns text-center">
+						<div class="circle-icon circle-icon--large circle-icon--center">
+							<img src="assets/images/icon-3.png">
+						</div>
+
+						<h3>CUSTOMIXIBLE</h3>
+						<p>Whether you need to create a brand from scratch, including marketing materials and a beautiful and functional.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!-- About us -->
+	<section class="section">
+		<div class="row card">
+			<div class="small-12 medium-6 columns p-l-0">
+				<img src="assets/images/who-we-are.png">
+			</div>
+			<div class="small-12 medium-6 columns p-t-l">
+				<h2 class="heading left">WHO WE ARE</h2>
+				<p class="m-b-m">We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. Whether you need to create a brand from scratch.</p>
+				<a class="button button--ghost-gold button--rounded" href="#">LEARN MORE</a>
+			</div>
+		</div>
+	</section>
+	
+	<!-- Works -->
+	<section class="section section--white">
+		<div class="row">
+			<div class="medium-12 columns">
+				<div class="text-center">
+					<h2 class="heading">RECENT WORK</h2>
+
+					<ul id="filters" class="isotope-filter">
+						<li class="isotope-filter__list is-checked" data-filter="*">ALL</li>
+						<li class="isotope-filter__list" data-filter=".web">WEB</li>
+					  	<li class="isotope-filter__list" data-filter=".creative">CREATIVE</li>
+					  	<li class="isotope-filter__list" data-filter=".print">PRINT</li>
+					  	<li class="isotope-filter__list" data-filter=".media">MEDIA</li>
+					  	<li class="isotope-filter__list" data-filter=".craft">CRAFT</li>
+					</ul>
+				</div>
+			</div>
+			<div class="medium-12 columns">
+				
+			</div>
+		</div>
+
+		<div class="isotope-grid">
+			<div class="isotope-grid__item web">
+				<figure>
+					<img src="http://lorempixel.com/700/500/technics/1/" class="isotope-image">
+				</figure>
+			</div>
+			<div class="isotope-grid__item creative">
+				<figure>
+					<img src="http://lorempixel.com/700/500/technics/2/" class="isotope-image">
+				</figure>
+			</div>
+			<div class="isotope-grid__item print">
+				<figure>
+					<img src="http://lorempixel.com/700/500/technics/3/" class="isotope-image">
+				</figure>
+			</div>
+			<div class="isotope-grid__item media">
+				<figure>
+					<img src="http://lorempixel.com/700/500/technics/4/" class="isotope-image">
+				</figure>
+			</div>
+			<div class="isotope-grid__item craft">
+				<figure>
+					<img src="http://lorempixel.com/700/500/technics/5/" class="isotope-image">
+				</figure>
+			</div>
+			<div class="isotope-grid__item web">
+				<figure>
+					<img src="http://lorempixel.com/700/500/technics/6/" class="isotope-image">
+				</figure>
+			</div>
+			<div class="isotope-grid__item creative">
+				<figure>
+					<img src="http://lorempixel.com/700/500/technics/9/" class="isotope-image">
+				</figure>
+			</div>
+			<div class="isotope-grid__item print">
+				<figure>
+					<img src="http://lorempixel.com/700/500/technics/8/" class="isotope-image">
+				</figure>
+			</div>
+		</div>
+	</section>
+	
+	<!-- How we work -->
+	<section class="row align-center section">
+		<div class="small-12 medium-6 large-4 columns">
+			<img src="assets/images/fapor-preview.png">
+		</div>
+		<div class="small-12 medium-6 large-5 columns">
+			<h2 class="heading left">HOW WE WORK</h2>
+			<p>We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. Whether you need to create a brand from scratch.</p>
+			<hr class="hr">
+			<ul class="list">
+				<li class="list__item"><span class="list__number">01</span> Sed ut perspiciatis unde omnis iste natus error si</li>
+				<li class="list__item"><span class="list__number">02</span> Nemo enim ipsam voluptatem quia voluptas sit aut </li>
+				<li class="list__item"><span class="list__number">03</span> Beque porro quisquam est, qui dolorem ipsum quia</li>
+			</ul>
+			<hr class="hr">
+		</div>
+	</section>
+	
+	<!-- Counting -->
+	<section class="section section--black">
+		<div class="row align-center">
+			<div class="medium-10 columns">	
+				<div class="row small-up-1 medium-up-3">
+					<div class="columns text-center">
+						<h3 class="f-24 color-gold">150</h3>
+						<h3 class="f-14 heading--border color-white">CLIENTS</h3>
+						<p class="color-white">Whether you need to create a brand from scratch, including marketing materials and a beautiful and functional.</p>
+					</div>
+					<div class="columns text-center">
+						<h3 class="f-24 color-gold">550</h3>
+						<h3 class="f-14 heading--border color-white">PROJECTS DONE</h3>
+						<p class="color-white">Whether you need to create a brand from scratch, including marketing materials and a beautiful and functional.</p>
+					</div>
+					<div class="columns text-center">
+						<h3 class="f-24 color-gold">7640</h3>
+						<h3 class="f-14 heading--border color-white">HOURS OF WORK</h3>
+						<p class="color-white">Whether you need to create a brand from scratch, including marketing materials and a beautiful and functional.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!-- Team -->
+	<section class="section">
+		<div class="row align-center">
+			<div class="small-12 medium-9 columns">
+				<div class="text-center m-b-l">
+					<h2 class="heading">MEET OUR TEAM</h2>
+				</div>
+
+				<div class="row">
+					<div class="small-12 medium-6 columns">
+						<div class="media-object">
+							<div class="media-object__section">
+								<div class="thumbnail">
+									<img src="http://foundation.zurb.com/sites/docs/assets/img/media-object/avatar-1.jpg" class="image-circle" width="130px">
+								</div>
+							</div>
+							<div class="media-object__section">
+								<span class="block color-gold m-b-xs">JOSHEP WILLIAM</span>
+								<span class="block m-b-xs">Creative Director</span>
+								<span class="block m-b-xs">Website or whether you are looking for a design refresh we are confident you will be pleased.</span>
+								<a href="#" class="m-r-xs"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+								<a href="#" class="m-r-xs"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="small-12 medium-6 columns">
+						<div class="media-object">
+							<div class="media-object__section">
+								<div class="thumbnail">
+									<img src="http://foundation.zurb.com/sites/docs/assets/img/media-object/avatar-1.jpg" class="image-circle" width="130px">
+								</div>
+							</div>
+							<div class="media-object__section">
+								<span class="block color-gold m-b-xs">JOSHEP WILLIAM</span>
+								<span class="block m-b-xs">Creative Director</span>
+								<span class="block m-b-xs">Website or whether you are looking for a design refresh we are confident you will be pleased.</span>
+								<a href="#" class="m-r-xs"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+								<a href="#" class="m-r-xs"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="small-12 medium-6 columns">
+						<div class="media-object">
+							<div class="media-object__section">
+								<div class="thumbnail">
+									<img src="http://foundation.zurb.com/sites/docs/assets/img/media-object/avatar-1.jpg" class="image-circle" width="130px">
+								</div>
+							</div>
+							<div class="media-object__section">
+								<span class="block color-gold m-b-xs">JOSHEP WILLIAM</span>
+								<span class="block m-b-xs">Creative Director</span>
+								<span class="block m-b-xs">Website or whether you are looking for a design refresh we are confident you will be pleased.</span>
+								<a href="#" class="m-r-xs"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+								<a href="#" class="m-r-xs"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="small-12 medium-6 columns">
+						<div class="media-object">
+							<div class="media-object__section">
+								<div class="thumbnail">
+									<img src="http://foundation.zurb.com/sites/docs/assets/img/media-object/avatar-1.jpg" class="image-circle" width="130px">
+								</div>
+							</div>
+							<div class="media-object__section">
+								<span class="block color-gold m-b-xs">JOSHEP WILLIAM</span>
+								<span class="block m-b-xs">Creative Director</span>
+								<span class="block m-b-xs">Website or whether you are looking for a design refresh we are confident you will be pleased.</span>
+								<a href="#" class="m-r-xs"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+								<a href="#" class="m-r-xs"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!-- Feature -->
+	<section class="section section--white">
+		<div class="row align-center">
+			<div class="medium-8 columns">
+				<div class="text-center m-b-l">
+					<h2 class="heading">OUR FEATURE</h2>
+					<p>We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. Whether you need to create a brand from scratch, including marketing materials and a beautiful.</p>
+				</div>
+			</div>
+			<div class="medium-10 columns">	
+				<div class="row">
+					<div class="medium-6 columns">
+						<div class="media-object">
+							<div class="media-object__section">
+								<div class="circle-icon circle-icon--small circle-icon--center">
+									<i class="fa fa-arrows color-gold" aria-hidden="true"></i>
+								</div>
+							</div>
+							<div class="media-object__section">
+								<span>Whether you need to create a brand from scratch, including marketing materials and a beautiful and functional.</span>
+							</div>
+						</div>
+						<div class="media-object">
+							<div class="media-object__section">
+								<div class="circle-icon circle-icon--small circle-icon--center">
+									<i class="fa fa-arrows color-gold" aria-hidden="true"></i>
+								</div>
+							</div>
+							<div class="media-object__section">
+								<span>Whether you need to create a brand from scratch, including marketing materials and a beautiful and functional.</span>
+							</div>
+						</div>
+						<div class="media-object">
+							<div class="media-object__section">
+								<div class="circle-icon circle-icon--small circle-icon--center">
+									<i class="fa fa-arrows color-gold" aria-hidden="true"></i>
+								</div>
+							</div>
+							<div class="media-object__section">
+								<span>Whether you need to create a brand from scratch, including marketing materials and a beautiful and functional.</span>
+							</div>
+						</div>
+						<div class="media-object">
+							<div class="media-object__section">
+								<div class="circle-icon circle-icon--small circle-icon--center">
+									<i class="fa fa-arrows color-gold" aria-hidden="true"></i>
+								</div>
+							</div>
+							<div class="media-object__section">
+								<span>Whether you need to create a brand from scratch, including marketing materials and a beautiful and functional.</span>
+							</div>
+						</div>
+						<div class="media-object">
+							<div class="media-object__section">
+								<div class="circle-icon circle-icon--small circle-icon--center">
+									<i class="fa fa-arrows color-gold" aria-hidden="true"></i>
+								</div>
+							</div>
+							<div class="media-object__section">
+								<span>Whether you need to create a brand from scratch, including marketing materials and a beautiful and functional.</span>
+							</div>
+						</div>
+					</div>
+					<div class="medium-6 columns">
+						<div class="media-object">
+							<div class="media-object__section">
+								<div class="circle-icon circle-icon--small circle-icon--center">
+									<i class="fa fa-arrows color-gold" aria-hidden="true"></i>
+								</div>
+							</div>
+							<div class="media-object__section">
+								<span>Whether you need to create a brand from scratch, including marketing materials and a beautiful and functional.</span>
+							</div>
+						</div>
+						<div class="media-object">
+							<div class="media-object__section">
+								<div class="circle-icon circle-icon--small circle-icon--center">
+									<i class="fa fa-arrows color-gold" aria-hidden="true"></i>
+								</div>
+							</div>
+							<div class="media-object__section">
+								<span>Whether you need to create a brand from scratch, including marketing materials and a beautiful and functional.</span>
+							</div>
+						</div>
+						<div class="media-object">
+							<div class="media-object__section">
+								<div class="circle-icon circle-icon--small circle-icon--center">
+									<i class="fa fa-arrows color-gold" aria-hidden="true"></i>
+								</div>
+							</div>
+							<div class="media-object__section">
+								<span>Whether you need to create a brand from scratch, including marketing materials and a beautiful and functional.</span>
+							</div>
+						</div>
+						<div class="media-object">
+							<div class="media-object__section">
+								<div class="circle-icon circle-icon--small circle-icon--center">
+									<i class="fa fa-arrows color-gold" aria-hidden="true"></i>
+								</div>
+							</div>
+							<div class="media-object__section">
+								<span>Whether you need to create a brand from scratch, including marketing materials and a beautiful and functional.</span>
+							</div>
+						</div>
+						<div class="media-object">
+							<div class="media-object__section">
+								<div class="circle-icon circle-icon--small circle-icon--center">
+									<i class="fa fa-arrows color-gold" aria-hidden="true"></i>
+								</div>
+							</div>
+							<div class="media-object__section">
+								<span>Whether you need to create a brand from scratch, including marketing materials and a beautiful and functional.</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Testimonial -->
+	<section class="section">
+		<div class="row">
+			<div class="medium-12 columns">
+				<div class="text-center">
+					<h2 class="heading">WHAT OUR CLIENTS SAY</h2>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Our Client -->
+
+
+{% endblock %}

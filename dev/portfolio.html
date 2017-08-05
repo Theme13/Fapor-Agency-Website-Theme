@@ -1,0 +1,80 @@
+{% extends "_layout/base.html" %}
+{% set active_page = 'portfolio' %}
+{% block content %}
+	<!-- Hero -->
+	<section class="hero hero--small">
+		<div class="row hero__content">
+			<div class="small-9 columns">
+				<h1 class="hero__title">Our Works</h1>
+				<p class="hero__text">We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. Whether you need to create a brand from scratch, including marketing materials and a beautiful.</p>
+			</div>
+		</div>
+	</section>
+	
+	<!-- Works -->
+	<section class="section section--white">
+		<div class="row">
+			<div class="medium-12 columns">
+				<div class="text-center">
+					<h2 class="heading">RECENT WORK</h2>
+
+					<ul id="filters" class="isotope-filter">
+						<li class="isotope-filter__list is-checked" data-filter="*">ALL</li>
+						<li class="isotope-filter__list" data-filter=".web">WEB</li>
+					  	<li class="isotope-filter__list" data-filter=".creative">CREATIVE</li>
+					  	<li class="isotope-filter__list" data-filter=".print">PRINT</li>
+					  	<li class="isotope-filter__list" data-filter=".media">MEDIA</li>
+					  	<li class="isotope-filter__list" data-filter=".craft">CRAFT</li>
+					</ul>
+				</div>
+			</div>
+			<div class="medium-12 columns">
+				
+			</div>
+		</div>
+
+		<div class="isotope-grid">
+			<div class="isotope-grid__item web">
+				<figure>
+					<img src="http://lorempixel.com/700/500/technics/1/" class="isotope-image">
+				</figure>
+			</div>
+			<div class="isotope-grid__item creative">
+				<figure>
+					<img src="http://lorempixel.com/700/500/technics/2/" class="isotope-image">
+				</figure>
+			</div>
+			<div class="isotope-grid__item print">
+				<figure>
+					<img src="http://lorempixel.com/700/500/technics/3/" class="isotope-image">
+				</figure>
+			</div>
+			<div class="isotope-grid__item media">
+				<figure>
+					<img src="http://lorempixel.com/700/500/technics/4/" class="isotope-image">
+				</figure>
+			</div>
+			<div class="isotope-grid__item craft">
+				<figure>
+					<img src="http://lorempixel.com/700/500/technics/5/" class="isotope-image">
+				</figure>
+			</div>
+			<div class="isotope-grid__item web">
+				<figure>
+					<img src="http://lorempixel.com/700/500/technics/6/" class="isotope-image">
+				</figure>
+			</div>
+			<div class="isotope-grid__item creative">
+				<figure>
+					<img src="http://lorempixel.com/700/500/technics/9/" class="isotope-image">
+				</figure>
+			</div>
+			<div class="isotope-grid__item print">
+				<figure>
+					<img src="http://lorempixel.com/700/500/technics/8/" class="isotope-image">
+				</figure>
+			</div>
+		</div>
+	</section>
+
+{% endblock %}

@@ -1,0 +1,83 @@
+/**
+* Mixin border radius
+* @param $size [value]
+* @return [Border radius css syntax]
+*/
+@mixin border-radius($size){
+  -webkit-border-radius: $size;
+  -moz-border-radius: $size;
+  border-radius: $size;  
+}
+
+/**
+* Mixin Opacity
+* @param  {$opacity [value]
+* @return [Opacity css syntax]
+*/
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  ilter: alpha(opacity=$opacity-ie); //IE8
+}
+
+/**
+* Mixin Button Hover
+* @param  {$bg_color [value]
+* @return [darken color css syntax]
+*/  
+@mixin setHoverBgColor($bg_color) {
+  background-color: $bg_color;
+  &:hover {
+    background-color:darken($bg_color,10%);
+  }
+  &:active {
+    background-color:darken($bg_color,25%);
+  } 
+}
+/**
+* [Mixin linearGradients]
+* @param $position [Position gradient]
+* @param $from     [from color]
+* @param $to       [to color]
+* @return [gradient linear css syntax ]
+*/
+@mixin linearGradients($position, $from, $to) {
+  @if $position == false {
+    $position : top;
+  }
+  background-image: $from; /* Old browsers */
+  background-image: -moz-linear-gradient($position,  $from 0%, $to 100%); /* FF3.6+ */
+  background-image: -webkit-gradient($position, color-stop(0%,$from), color-stop(100%,$to)); /* Chrome,Safari4+ */
+  background-image: -webkit-linear-gradient($position,  $from 0%,$to 100%); /* Chrome10+,Safari5.1+ */
+  background-image: -o-linear-gradient($position,  $from 0%,$to 100%); /* Opera 11.10+ */
+  background-image: -ms-linear-gradient($position,  $from 0%,$to 100%); /* IE10+ */
+  background-image: linear-gradient($position,  $from 0%,$to 100%); /* W3C */
+}
+
+/**
+* Mixin position
+* @param $type [Either `relative`, `absolute` or `fixed`]
+* @param $left [Left offset]
+* @param $right [Right offset]
+* @param $top [Top offset]
+* @param $bottom [Bottom offset]
+* @return [Position css syntax]
+*/
+@mixin position($type, $top: null, $right: null, $bottom: null, $left: null) {
+  position: $type;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+/**
+* Mixin size
+* @param  $width   [width]
+* @param  $height [height]
+* @return [size css syntax]
+*/
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}

@@ -1,0 +1,60 @@
+$pixels: (
+  0: 0px,
+  xs: 10px,
+  s: 20px,
+  m: 40px,
+  l: 60px,
+  );
+
+@mixin point-generator($type, $name, $value) {
+
+  @if($type == p) {
+    .#{$type}-#{$name} {
+      padding: $value;
+    }
+    .#{$type}-t-#{$name} {
+      padding-top: $value;
+    }
+    .#{$type}-b-#{$name} {
+      padding-bottom: $value;
+    }
+    .#{$type}-tb-#{$name} {
+      padding: $value 0px;
+    }
+    .#{$type}-l-#{$name} {
+      padding-left: $value;
+    }
+    .#{$type}-r-#{$name} {
+      padding-right: $value;
+    }
+  } 
+  @else {
+    .#{$type}-#{$name} {
+      margin: $value;
+    }
+    .#{$type}-t-#{$name} {
+      margin-top: $value;
+    }
+    .#{$type}-b-#{$name} {
+      margin-bottom: $value;
+    }
+    .#{$type}-tb-#{$name} {
+      margin: $value 0px;
+    }
+    .#{$type}-l-#{$name} {
+      margin-left: $value;
+    }
+    .#{$type}-r-#{$name} {
+      margin-right: $value;
+    }
+  }
+}
+
+
+.p-0 { padding: 0; }
+.m-0 { margin: 0; }
+
+@each $name, $value in $pixels {
+  @include point-generator('p', $name, $value);
+  @include point-generator('m', $name, $value);
+}
