@@ -122,7 +122,7 @@ gulp.task('serve', ['clean', 'lint', 'html', 'sass', 'script', 'images'], functi
 
   gulp.watch(devPath.nunjucks, ['html']);
   gulp.watch(devPath.style, ['sass']);
-  gulp.watch(devPath.style, ['script']);
+  gulp.watch(devPath.script, ['script']);
 })
 
 /**
