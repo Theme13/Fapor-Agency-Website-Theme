@@ -3,6 +3,7 @@
 	position: relative;
 	height: 550px;
 	background-color: $hero-background;
+	background-size: cover;
 	&#{$this}--small {
 		height: 250px;
 		#{$this}__content {

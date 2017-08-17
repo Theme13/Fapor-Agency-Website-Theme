@@ -13,6 +13,27 @@
     	@include border-radius(50px);
     }
 
+    &--expand {
+    	width: 100%;
+    }
+
+    &--small {
+    	padding: 8px 25px 8px;
+    	font-size: 14px;
+    }
+	
+	&--gold {
+		background: map-get($colors, gold);
+		border: 1px solid map-get($colors, gold);
+		color: map-get($colors, white);
+		&:hover,
+		&:active {
+			background: darken(map-get($colors, gold), 10);
+			border: 1px solid darken(map-get($colors, gold), 10);
+			color: map-get($colors, white);
+		}
+    }
+    
     &--ghost-gold {
 		background: transparent;
 		border: 1px solid map-get($colors, gold);

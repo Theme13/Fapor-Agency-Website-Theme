@@ -1,4 +1,6 @@
 .header {
-	height: 75px;
 	background-color: $header-background;
+	.row {
+		height: 75px;
+	}
 }

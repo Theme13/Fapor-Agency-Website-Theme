@@ -1,0 +1,23 @@
+.form {
+	&__input {
+		display: block;
+	    width: 100%;
+	    padding: 10px;
+	    font-size: 14px;
+	    background: transparent;
+	    outline: none;
+	    &:focus {
+
+	    }
+	    &:disabled {
+	      background: #f8faff;
+	      cursor: no-drop;
+	    }
+	    &--outline {
+	    	background: transparent;
+	    	color: map-get($colors, gold);
+	    	border: 1px solid;
+	    }
+
+	}
+}

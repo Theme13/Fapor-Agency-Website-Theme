@@ -2,24 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Frontend starter project</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:600" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/app.min.css">
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="https://use.fontawesome.com/6a853a3c2b.js"></script>
-    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
 </head>
 <body>
+
+	<div class="mobile-nav">
+    	<nav>
+			<ul class="menu text-right">
+				<li><a href="index.html" class="active">HOME</a></li>
+				<li><a href="about.html" class="">ABOUT</a></li>
+				<li><a href="service.html" class="">SERVICE</a></li>
+				<li><a href="portfolio.html" class="">PORTFOLIO</a></li>
+				<li><a href="contact.html" class="">CONTACT</a></li>
+				<li><a href="#" class="">COMPONENTS</a></li>
+			</ul>
+		</nav>   
+    </div>
 
 	<header class="header">
 		<div class="row align-middle">
 			<div class="medium-3 columns">
 				<a href="#"><img src="assets/images/logo.png"></a>
 			</div>
-			<div class="medium-9 columns">
-				<nav>
+			<div class="medium-9 columns text-right">
+				<nav class="desktop-menu">
 					<ul class="menu text-right">
 						<li class="menu__list"><a href="index.html" class="menu__link active">HOME</a></li>
 						<li class="menu__list"><a href="about.html" class="menu__link">ABOUT</a></li>
@@ -29,19 +39,35 @@
 						<li class="menu__list"><a href="#" class="menu__link">COMPONENTS</a></li>
 					</ul>
 				</nav>
+				<div class="burger-menu js-open-menu">
+                  	<span></span>
+                 	<span></span>
+                  	<span></span>
+                  	<span></span>
+                </div>
 			</div>
 		</div>
 	</header>
 
     
 	<!-- Hero -->
-	<section class="hero">
-		<!-- <div class="owl-carousel owl-theme js-slider-hero">
-		    <div class="item"><h4 style="color: white">1</h4></div>
-		    <div class="item"><h4 style="color: white">2</h4></div>
-		    <div class="item"><h4 style="color: white">3</h4></div>
-		    <div class="item"><h4 style="color: white">4</h4></div>
-		</div> -->
+	<section class="hero" style="background-image: url('assets/images/hero.jpg')">
+		<div class="owl-carousel owl-hero js-slider-hero">
+		    <div class="item text-center">
+          		<div>
+			    	<small>We create Amazing Things</small>
+			    	<h2>WELLCOME TO FAPOR</h2>
+			    	<a class="button button--gold button--rounded" href="#">LEARN MORE</a>
+		    	</div>
+		    </div>
+			<div class="item text-center">
+          		<div>
+			    	<small>We create Amazing Things</small>
+			    	<h2>WELLCOME TO FAPOR</h2>
+			    	<a class="button button--gold button--rounded" href="#">LEARN MORE</a>
+		    	</div>
+		    </div>	   
+		</div>
 	</section>
 	
 	<!-- Service -->
@@ -90,7 +116,7 @@
 			<div class="small-12 medium-6 columns p-l-0">
 				<img src="assets/images/who-we-are.png">
 			</div>
-			<div class="small-12 medium-6 columns p-t-l">
+			<div class="small-12 medium-6 columns p-t-m p-b-m">
 				<h2 class="heading left">WHO WE ARE</h2>
 				<p class="m-b-m">We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. Whether you need to create a brand from scratch.</p>
 				<a class="button button--ghost-gold button--rounded" href="#">LEARN MORE</a>
@@ -101,7 +127,7 @@
 	<!-- Works -->
 	<section class="section section--white">
 		<div class="row">
-			<div class="medium-12 columns">
+			<div class="small-12 columns">
 				<div class="text-center">
 					<h2 class="heading">RECENT WORK</h2>
 
@@ -115,50 +141,87 @@
 					</ul>
 				</div>
 			</div>
-			<div class="medium-12 columns">
-				
-			</div>
 		</div>
 
 		<div class="isotope-grid">
-			<div class="isotope-grid__item web">
+			<div class="isotope-grid__item web work-item">
 				<figure>
 					<img src="http://lorempixel.com/700/500/technics/1/" class="isotope-image">
+					<figcaption>
+						<h3>Your Project</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, similique.</p>
+						<a class="button button--ghost-gold button--rounded" href="#">VIEW DETAIL</a>
+					</figcaption>
 				</figure>
 			</div>
-			<div class="isotope-grid__item creative">
+			<div class="isotope-grid__item creative work-item">
 				<figure>
 					<img src="http://lorempixel.com/700/500/technics/2/" class="isotope-image">
+					<figcaption>
+						<h3>Your Project</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, similique.</p>
+						<a class="button button--ghost-gold button--rounded" href="#">VIEW DETAIL</a>
+					</figcaption>
 				</figure>
 			</div>
-			<div class="isotope-grid__item print">
+			<div class="isotope-grid__item print work-item">
 				<figure>
 					<img src="http://lorempixel.com/700/500/technics/3/" class="isotope-image">
+					<figcaption>
+						<h3>Your Project</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, similique.</p>
+						<a class="button button--ghost-gold button--rounded" href="#">VIEW DETAIL</a>
+					</figcaption>
 				</figure>
 			</div>
-			<div class="isotope-grid__item media">
+			<div class="isotope-grid__item media work-item">
 				<figure>
 					<img src="http://lorempixel.com/700/500/technics/4/" class="isotope-image">
+					<figcaption>
+						<h3>Your Project</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, similique.</p>
+						<a class="button button--ghost-gold button--rounded" href="#">VIEW DETAIL</a>
+					</figcaption>
 				</figure>
 			</div>
-			<div class="isotope-grid__item craft">
+			<div class="isotope-grid__item craft work-item">
 				<figure>
 					<img src="http://lorempixel.com/700/500/technics/5/" class="isotope-image">
+					<figcaption>
+						<h3>Your Project</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, similique.</p>
+						<a class="button button--ghost-gold button--rounded" href="#">VIEW DETAIL</a>
+					</figcaption>
 				</figure>
 			</div>
-			<div class="isotope-grid__item web">
+			<div class="isotope-grid__item web work-item">
 				<figure>
 					<img src="http://lorempixel.com/700/500/technics/6/" class="isotope-image">
+					<figcaption>
+						<h3>Your Project</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, similique.</p>
+						<a class="button button--ghost-gold button--rounded" href="#">VIEW DETAIL</a>
+					</figcaption>
 				</figure>
 			</div>
-			<div class="isotope-grid__item creative">
+			<div class="isotope-grid__item creative work-item">
 				<figure>
 					<img src="http://lorempixel.com/700/500/technics/9/" class="isotope-image">
+					<figcaption>
+						<h3>Your Project</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, similique.</p>
+						<a class="button button--ghost-gold button--rounded" href="#">VIEW DETAIL</a>
+					</figcaption>
 				</figure>
 			</div>
-			<div class="isotope-grid__item print">
+			<div class="isotope-grid__item print work-item">
 				<figure>
 					<img src="http://lorempixel.com/700/500/technics/8/" class="isotope-image">
+					<figcaption>
+						<h3>Your Project</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, similique.</p>
+						<a class="button button--ghost-gold button--rounded" href="#">VIEW DETAIL</a>
+					</figcaption>
 				</figure>
 			</div>
 		</div>
@@ -188,17 +251,17 @@
 			<div class="medium-10 columns">	
 				<div class="row small-up-1 medium-up-3">
 					<div class="columns text-center">
-						<h3 class="f-24 color-gold">150</h3>
+						<h3 class="f-24 color-gold counters">150</h3>
 						<h3 class="f-14 heading--border color-white">CLIENTS</h3>
 						<p class="color-white">Whether you need to create a brand from scratch, including marketing materials and a beautiful and functional.</p>
 					</div>
 					<div class="columns text-center">
-						<h3 class="f-24 color-gold">550</h3>
+						<h3 class="f-24 color-gold counters">550</h3>
 						<h3 class="f-14 heading--border color-white">PROJECTS DONE</h3>
 						<p class="color-white">Whether you need to create a brand from scratch, including marketing materials and a beautiful and functional.</p>
 					</div>
 					<div class="columns text-center">
-						<h3 class="f-24 color-gold">7640</h3>
+						<h3 class="f-24 color-gold counters">7640</h3>
 						<h3 class="f-14 heading--border color-white">HOURS OF WORK</h3>
 						<p class="color-white">Whether you need to create a brand from scratch, including marketing materials and a beautiful and functional.</p>
 					</div>
@@ -220,16 +283,16 @@
 						<div class="media-object">
 							<div class="media-object__section">
 								<div class="thumbnail">
-									<img src="http://foundation.zurb.com/sites/docs/assets/img/media-object/avatar-1.jpg" class="image-circle" width="130px">
+									<img src="https://randomuser.me/api/portraits/men/1.jpg" class="image-circle" width="130px">
 								</div>
 							</div>
 							<div class="media-object__section">
 								<span class="block color-gold m-b-xs">JOSHEP WILLIAM</span>
 								<span class="block m-b-xs">Creative Director</span>
 								<span class="block m-b-xs">Website or whether you are looking for a design refresh we are confident you will be pleased.</span>
-								<a href="#" class="m-r-xs"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-								<a href="#" class="m-r-xs"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-								<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+								<a href="#" class="m-r-xs color-black"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+								<a href="#" class="m-r-xs color-black"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+								<a href="#" class="color-black"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
 							</div>
 						</div>
 					</div>
@@ -237,16 +300,16 @@
 						<div class="media-object">
 							<div class="media-object__section">
 								<div class="thumbnail">
-									<img src="http://foundation.zurb.com/sites/docs/assets/img/media-object/avatar-1.jpg" class="image-circle" width="130px">
+									<img src="https://randomuser.me/api/portraits/men/1.jpg" class="image-circle" width="130px">
 								</div>
 							</div>
 							<div class="media-object__section">
 								<span class="block color-gold m-b-xs">JOSHEP WILLIAM</span>
 								<span class="block m-b-xs">Creative Director</span>
 								<span class="block m-b-xs">Website or whether you are looking for a design refresh we are confident you will be pleased.</span>
-								<a href="#" class="m-r-xs"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-								<a href="#" class="m-r-xs"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-								<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+								<a href="#" class="m-r-xs color-black"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+								<a href="#" class="m-r-xs color-black"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+								<a href="#" class="color-black"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
 							</div>
 						</div>
 					</div>
@@ -256,16 +319,16 @@
 						<div class="media-object">
 							<div class="media-object__section">
 								<div class="thumbnail">
-									<img src="http://foundation.zurb.com/sites/docs/assets/img/media-object/avatar-1.jpg" class="image-circle" width="130px">
+									<img src="https://randomuser.me/api/portraits/men/1.jpg" class="image-circle" width="130px">
 								</div>
 							</div>
 							<div class="media-object__section">
 								<span class="block color-gold m-b-xs">JOSHEP WILLIAM</span>
 								<span class="block m-b-xs">Creative Director</span>
 								<span class="block m-b-xs">Website or whether you are looking for a design refresh we are confident you will be pleased.</span>
-								<a href="#" class="m-r-xs"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-								<a href="#" class="m-r-xs"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-								<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+								<a href="#" class="m-r-xs color-black"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+								<a href="#" class="m-r-xs color-black"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+								<a href="#" class="color-black"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
 							</div>
 						</div>
 					</div>
@@ -273,16 +336,16 @@
 						<div class="media-object">
 							<div class="media-object__section">
 								<div class="thumbnail">
-									<img src="http://foundation.zurb.com/sites/docs/assets/img/media-object/avatar-1.jpg" class="image-circle" width="130px">
+									<img src="https://randomuser.me/api/portraits/men/1.jpg" class="image-circle" width="130px">
 								</div>
 							</div>
 							<div class="media-object__section">
 								<span class="block color-gold m-b-xs">JOSHEP WILLIAM</span>
 								<span class="block m-b-xs">Creative Director</span>
 								<span class="block m-b-xs">Website or whether you are looking for a design refresh we are confident you will be pleased.</span>
-								<a href="#" class="m-r-xs"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-								<a href="#" class="m-r-xs"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-								<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+								<a href="#" class="m-r-xs color-black"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+								<a href="#" class="m-r-xs color-black"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+								<a href="#" class="color-black"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
 							</div>
 						</div>
 					</div>
@@ -294,15 +357,15 @@
 	<!-- Feature -->
 	<section class="section section--white">
 		<div class="row align-center">
-			<div class="medium-8 columns">
+			<div class="small-12 medium-8 columns">
 				<div class="text-center m-b-l">
 					<h2 class="heading">OUR FEATURE</h2>
 					<p>We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. Whether you need to create a brand from scratch, including marketing materials and a beautiful.</p>
 				</div>
 			</div>
-			<div class="medium-10 columns">	
+			<div class="small-12 medium-10 columns">	
 				<div class="row">
-					<div class="medium-6 columns">
+					<div class="small-12 medium-6 columns">
 						<div class="media-object">
 							<div class="media-object__section">
 								<div class="circle-icon circle-icon--small circle-icon--center">
@@ -316,7 +379,7 @@
 						<div class="media-object">
 							<div class="media-object__section">
 								<div class="circle-icon circle-icon--small circle-icon--center">
-									<i class="fa fa-arrows color-gold" aria-hidden="true"></i>
+									<i class="fa fa-clone color-gold" aria-hidden="true"></i>
 								</div>
 							</div>
 							<div class="media-object__section">
@@ -326,7 +389,7 @@
 						<div class="media-object">
 							<div class="media-object__section">
 								<div class="circle-icon circle-icon--small circle-icon--center">
-									<i class="fa fa-arrows color-gold" aria-hidden="true"></i>
+									<i class="fa fa-flask color-gold" aria-hidden="true"></i>
 								</div>
 							</div>
 							<div class="media-object__section">
@@ -336,17 +399,7 @@
 						<div class="media-object">
 							<div class="media-object__section">
 								<div class="circle-icon circle-icon--small circle-icon--center">
-									<i class="fa fa-arrows color-gold" aria-hidden="true"></i>
-								</div>
-							</div>
-							<div class="media-object__section">
-								<span>Whether you need to create a brand from scratch, including marketing materials and a beautiful and functional.</span>
-							</div>
-						</div>
-						<div class="media-object">
-							<div class="media-object__section">
-								<div class="circle-icon circle-icon--small circle-icon--center">
-									<i class="fa fa-arrows color-gold" aria-hidden="true"></i>
+									<i class="fa fa-heart-o color-gold" aria-hidden="true"></i>
 								</div>
 							</div>
 							<div class="media-object__section">
@@ -354,11 +407,11 @@
 							</div>
 						</div>
 					</div>
-					<div class="medium-6 columns">
+					<div class="small-12 medium-6 columns">
 						<div class="media-object">
 							<div class="media-object__section">
 								<div class="circle-icon circle-icon--small circle-icon--center">
-									<i class="fa fa-arrows color-gold" aria-hidden="true"></i>
+									<i class="fa fa-map-o color-gold" aria-hidden="true"></i>
 								</div>
 							</div>
 							<div class="media-object__section">
@@ -368,7 +421,7 @@
 						<div class="media-object">
 							<div class="media-object__section">
 								<div class="circle-icon circle-icon--small circle-icon--center">
-									<i class="fa fa-arrows color-gold" aria-hidden="true"></i>
+									<i class="fa fa-television color-gold" aria-hidden="true"></i>
 								</div>
 							</div>
 							<div class="media-object__section">
@@ -378,7 +431,7 @@
 						<div class="media-object">
 							<div class="media-object__section">
 								<div class="circle-icon circle-icon--small circle-icon--center">
-									<i class="fa fa-arrows color-gold" aria-hidden="true"></i>
+									<i class="fa fa-line-chart color-gold" aria-hidden="true"></i>
 								</div>
 							</div>
 							<div class="media-object__section">
@@ -388,17 +441,7 @@
 						<div class="media-object">
 							<div class="media-object__section">
 								<div class="circle-icon circle-icon--small circle-icon--center">
-									<i class="fa fa-arrows color-gold" aria-hidden="true"></i>
-								</div>
-							</div>
-							<div class="media-object__section">
-								<span>Whether you need to create a brand from scratch, including marketing materials and a beautiful and functional.</span>
-							</div>
-						</div>
-						<div class="media-object">
-							<div class="media-object__section">
-								<div class="circle-icon circle-icon--small circle-icon--center">
-									<i class="fa fa-arrows color-gold" aria-hidden="true"></i>
+									<i class="fa fa-gg color-gold" aria-hidden="true"></i>
 								</div>
 							</div>
 							<div class="media-object__section">
@@ -414,17 +457,66 @@
 	<!-- Testimonial -->
 	<section class="section">
 		<div class="row">
-			<div class="medium-12 columns">
+			<div class="small-12 columns">
 				<div class="text-center">
 					<h2 class="heading">WHAT OUR CLIENTS SAY</h2>
+
+					<div class="owl-carousel owl-testimonial js-slider-testimonial">
+					    <div class="item text-center">
+			          		<div>
+			          			<img src="https://randomuser.me/api/portraits/men/10.jpg" class="image-circle">
+						    	<p>Praesent tincidunt molestie libero mollis porta. Faucibus leo, ac aliquet magna. Vivamus ullamcorper mollis leo, at sagittis mi pellentesque quis. Praesent nec elit tristique.</p>
+						    	<h4 class="color-gold m-0">Larry Jane</h4>
+						    	<strong>General Manager</strong>
+					    	</div>
+					    </div>
+						<div class="item text-center">
+			          		<div>
+			          			<img src="https://randomuser.me/api/portraits/men/10.jpg" class="image-circle">
+						    	<p>Praesent tincidunt molestie libero mollis porta. Faucibus leo, ac aliquet magna. Vivamus ullamcorper mollis leo, at sagittis mi pellentesque quis. Praesent nec elit tristique.</p>
+						    	<h4 class="color-gold m-0">Larry Jane</h4>
+						    	<strong>General Manager</strong>
+					    	</div>
+					    </div>
+					    <div class="item text-center">
+			          		<div>
+			          			<img src="https://randomuser.me/api/portraits/men/10.jpg" class="image-circle">
+						    	<p>Praesent tincidunt molestie libero mollis porta. Faucibus leo, ac aliquet magna. Vivamus ullamcorper mollis leo, at sagittis mi pellentesque quis. Praesent nec elit tristique.</p>
+						    	<h4 class="color-gold m-0">Larry Jane</h4>
+						    	<strong>General Manager</strong>
+					    	</div>
+					    </div>
+					    <div class="item text-center">
+			          		<div>
+			          			<img src="https://randomuser.me/api/portraits/men/10.jpg" class="image-circle">
+						    	<p>Praesent tincidunt molestie libero mollis porta. Faucibus leo, ac aliquet magna. Vivamus ullamcorper mollis leo, at sagittis mi pellentesque quis. Praesent nec elit tristique.</p>
+						    	<h4 class="color-gold m-0">Larry Jane</h4>
+						    	<strong>General Manager</strong>
+					    	</div>
+					    </div>	   
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
 	<!-- Our Client -->
-
-
+	<section class="section section--white">
+	    <div class="row small-up-1 medium-up-3 large-up-6 align-center">
+	    	<div class="columns text-center">
+	    		<img src="assets/images/c-1.jpg" alt="">
+	    	</div>
+	    	<div class="columns text-center">
+	    		<img src="assets/images/c-2.jpg" alt="">
+	    	</div>
+	    	<div class="columns text-center">
+	    		<img src="assets/images/c-3.jpg" alt="">
+	    	</div>
+	    	<div class="columns text-center">
+	    		<img src="assets/images/c-4.jpg" alt="">
+	    	</div>
+	    </div>
+	</section>
 
 
     <footer>
@@ -440,22 +532,38 @@
 
 				<div class="medium-3 columns">
 					<h4 class="color-gold">CONTACT INFO</h4>
+					<address class="color-grey">
+						PO Box 17122 Nollins Street 5034 Los Angelos
+					</address>
+					<p class="color-grey">
+						Phone: 1800555.0658 <br>
+						Email: support@fapor.com <br>
+						Web: fapor.com
+					</p>
 				</div>
 				
 				<div class="medium-3 olumns">
 					<h4 class="color-gold">SUBSCRIBE TO OUR NEWSLETTER</h4>
+					<form class="form">
+						<input type="email" name="" class="form__input form__input--outline" placeholder="Enter your email address">
+						<button type="submit" class="button button--expand button--small button--gold m-t-xs">SUBSCRIBE NOW</button>
+					</form>
 				</div>
 			</div>
     	</div>
     	<div class="copyright">
     		<div class="row align-justify">
     			<div class="medium-4 columns">
-    				<span class="color-grey">© 2016  Fapor by Respotheme</span>
+    				<span class="color-grey">© Fapor by <a href="http://theme13.com" target="_blank">Theme13.com</a></span>
     			</div>
     			<div class="medium-4 columns"></div>
     		</div>
     	</div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://use.fontawesome.com/6a853a3c2b.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
     <script type="text/javascript" src="assets/js/app.min.js"></script>
 </body>
 </html>
