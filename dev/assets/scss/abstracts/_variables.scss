@@ -15,23 +15,23 @@ $colors: (
   black: #000000,
   light-black: #2b2f35,
   dark-black: #24282f,
-  dark-blue: #24282f,
   gold: #b5a263,
-  grey: #f7f7f7
+  grey: #6e7279,
+  soft-grey: #f7f7f7
 );
 
 /* TYPOGRAPHY */
 $heading-border: map-get($colors, gold);
 
 /* BODY */
-$body-background: map-get($colors, grey);
+$body-background: map-get($colors, soft-grey);
 $body-color: map-get($colors, dark-black);
 
 /* ICON */
 $icon-border: map-get($colors, gold);
 
 /* HEADER */
-$header-background: map-get($colors, dark-blue);
+$header-background: map-get($colors, dark-black);
 
 /* MENU */
 $menu-color: map-get($colors, white);

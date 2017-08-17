@@ -82,7 +82,7 @@ body {
 	-o-transition: .4s ease-in-out;
 	transition: .4s ease-in-out;
 	cursor: pointer;
-	@media screen and (max-width: 640px) {
+	@media screen and (max-width: 768px) {
 		display: inline-block;
 	}
 
@@ -151,7 +151,7 @@ body {
 
 .desktop-menu {
 	display: inline-block;
-	@media screen and (max-width: 641px) {
+	@media screen and (max-width: 768px) {
 		display: none;
 	}
 }

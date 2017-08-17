@@ -42,5 +42,5 @@
 
 .color-white { color: map-get($colors, white); }
 .color-gold { color: map-get($colors, gold); }
-.color-grey { color: #6e7279; }
+.color-grey { color: map-get($colors, grey); }
 .color-black { color: map-get($colors, dark-black); }

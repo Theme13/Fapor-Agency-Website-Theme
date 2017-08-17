@@ -31,6 +31,12 @@
         margin: 0;
         padding: 0;
       }
+      @include breakpoint(medium down) { 
+        width: 100%
+      }
+      @include breakpoint(medium only) {
+        width: 50%
+      }
     }
   }
   &-image {
